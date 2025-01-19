@@ -230,3 +230,36 @@ function showRelevantRoutes(station) {
         firstVisibleRoute.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }
+
+// Function to check if the selected city is available
+function checkCity(city) {
+    const availableCities = ['Cape Town']; // Add more cities as needed
+    const topHeader = document.querySelector('.Top_header');
+    
+    if (!availableCities.includes(city)) {
+        topHeader.classList.add('error');
+        // Show error message
+        const addressLocation = document.querySelector('.address_location');
+        const errorMsg = document.createElement('span');
+        errorMsg.className = 'error-message';
+        errorMsg.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Service not available in this city';
+        
+        // Remove any existing error message
+        const existingError = addressLocation.querySelector('.error-message');
+        if (existingError) {
+            existingError.remove();
+        }
+        
+        addressLocation.appendChild(errorMsg);
+        
+        // Remove error state after 5 seconds
+        setTimeout(() => {
+            topHeader.classList.remove('error');
+            errorMsg.remove();
+        }, 5000);
+        
+        return false;
+    }
+    
+    return true;
+}

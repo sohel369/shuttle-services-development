@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
+    <div class="Top_header">
+        <div class="inner">
+            <div class="address_location">
+                <h4><i class="fa-solid fa-location-dot"></i> 12/A College road, Cape Town, South Africa</h4>
+                <span><i class="fa-solid fa-phone"></i> +1 234 567 890</span>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#" title="Book Ticket"><i class="fa-solid fa-ticket"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <header>
         <nav>
             <div class="logo">
-                <h1>ShuttleService</h1>
+                <a href="index.html">ShuttleService</a>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#routes">Routes</a></li>
                 <li><a href="#schedules">Schedules</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -46,6 +65,181 @@
                 </div>
             </div>
         </section>
+
+        <section class="shuttle-schedule">
+            <div class="container">
+                <h2>Shuttle Service Routes and Schedules</h2>
+                
+                <!-- Route 1 -->
+                <div class="route-section">
+                    <h3>Route 1: Uitenhage to Summerstrand Campuses</h3>
+                    <div class="route-trips">
+                        <div class="trip-table">
+                            <h4>Morning Trips</h4>
+                            <table>
+                                <tr>
+                                    <th>Location</th>
+                                    <th>Trip 1</th>
+                                    <th>Trip 2</th>
+                                </tr>
+                                <tr>
+                                    <td>Uitenhage Metro railway station</td>
+                                    <td>06h20</td>
+                                    <td>08h20</td>
+                                </tr>
+                                <tr>
+                                    <td>Missionvale Campus</td>
+                                    <td>06h45</td>
+                                    <td>08h45</td>
+                                </tr>
+                                <tr>
+                                    <td>Shatterproof</td>
+                                    <td>06h50</td>
+                                    <td>08h50</td>
+                                </tr>
+                                <tr>
+                                    <td>2nd Ave Campus, North Campus</td>
+                                    <td>07h20</td>
+                                    <td>09h20</td>
+                                </tr>
+                                <tr>
+                                    <td>Arrives at South campus</td>
+                                    <td>07h30</td>
+                                    <td>09h30</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Route 2 -->
+                <div class="route-section">
+                    <h3>Route 2: Missionvale to Summerstrand Campuses</h3>
+                    <div class="route-trips">
+                        <div class="trip-table">
+                            <h4>Morning Trips</h4>
+                            <table>
+                                <tr>
+                                    <th>Location</th>
+                                    <th>Trip 1</th>
+                                    <th>Trip 2</th>
+                                </tr>
+                                <tr>
+                                    <td>Missionvale Campus</td>
+                                    <td>06h40</td>
+                                    <td>09h00</td>
+                                </tr>
+                                <tr>
+                                    <td>Shatterproof</td>
+                                    <td>06h45</td>
+                                    <td>09h20</td>
+                                </tr>
+                                <tr>
+                                    <td>2nd Ave Campus, North Campus</td>
+                                    <td>07h05</td>
+                                    <td>09h45</td>
+                                </tr>
+                                <tr>
+                                    <td>Arrives at South campus</td>
+                                    <td>07h10</td>
+                                    <td>09h50</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Route 3 -->
+                <div class="route-section">
+                    <h3>Route 3: Summerstrand Campuses to Missionvale Campus</h3>
+                    <div class="route-trips">
+                        <div class="trip-table">
+                            <h4>Morning Trips</h4>
+                            <table>
+                                <tr>
+                                    <th>Location</th>
+                                    <th>Trip 1</th>
+                                    <th>Trip 2</th>
+                                </tr>
+                                <tr>
+                                    <td>South Campus</td>
+                                    <td>07h00</td>
+                                    <td>09h00</td>
+                                </tr>
+                                <tr>
+                                    <td>North campus</td>
+                                    <td>07h05</td>
+                                    <td>09h05</td>
+                                </tr>
+                                <tr>
+                                    <td>2nd Avenue</td>
+                                    <td>07h10</td>
+                                    <td>09h10</td>
+                                </tr>
+                                <tr>
+                                    <td>Humewood / Kings Beach</td>
+                                    <td>07h15</td>
+                                    <td>09h15</td>
+                                </tr>
+                                <tr>
+                                    <td>Arrives at Missionvale Campus</td>
+                                    <td>07h50</td>
+                                    <td>09h50</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Routes 4-11 -->
+                <div class="route-section">
+                    <h3>Additional Routes Available</h3>
+                    <div class="route-list">
+                        <div class="route-item">
+                            <h4>Route 4: Korsten to Summerstrand Campuses</h4>
+                            <p>Multiple trips available starting from 06h40</p>
+                        </div>
+                        <div class="route-item">
+                            <h4>Route 5: Sydenham-Varsity Park-Law Courts-Mount Road-Pier 14</h4>
+                            <p>Multiple trips available starting from 06h40</p>
+                        </div>
+                        <div class="route-item">
+                            <h4>Route 6: Central to Summerstrand Campuses</h4>
+                            <p>Multiple trips available starting from 06h40</p>
+                        </div>
+                        <div class="route-item">
+                            <h4>Route 7: Feathermarket to Summerstrand Campuses</h4>
+                            <p>Multiple trips available starting from 07h00</p>
+                        </div>
+                        <div class="route-item">
+                            <h4>Route 8: Walmer to Summerstrand Campuses</h4>
+                            <p>Multiple trips available starting from 06h40</p>
+                        </div>
+                        <div class="route-item">
+                            <h4>Route 9: Humewood/Forrest Hill to Summerstrand Campuses</h4>
+                            <p>Multiple trips available starting from 07h00</p>
+                        </div>
+                        <div class="route-item">
+                            <h4>Route 10: Summerstrand Intercampus Hopper</h4>
+                            <p>Regular trips between South Campus and various stops</p>
+                        </div>
+                        <div class="route-item">
+                            <h4>Route 11: Summerstrand Student Village to Campuses</h4>
+                            <p>Multiple trips available starting from 06h45</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-section">
+                    <h3>Contact Information</h3>
+                    <div class="contacts">
+                        <p><strong>Main Staff:</strong> Thanduxolo Rasi (0735460528) and Tanduxolo Bool (0630861746) - all queries</p>
+                        <p><strong>Summer Shuttles Staff:</strong> MR Theo Takala 064 017 5151</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -71,4 +265,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
