@@ -12,7 +12,8 @@ const routes = [
                     { station: "Missionvale Campus", time: "06h45" },
                     { station: "Shatterproof", time: "06h50" },
                     { station: "2nd Ave Campus, North Campus", time: "07h20" },
-                    { station: "South Campus", time: "07h30" }
+                    { station: "South Campus", time: "07h30" },
+                    { station: "Central", time: "07h30" }
                 ]
             },
             {
@@ -66,12 +67,14 @@ const routes = [
 document.addEventListener('DOMContentLoaded', () => {
     displaySchedule();
     initializeSearch();
+
     // Hide all routes initially
     document.querySelectorAll('.route-section').forEach(section => {
         section.style.display = 'none';
     });
 });
 
+// Display the shuttle schedule
 function displaySchedule() {
     const scheduleContainer = document.querySelector('.schedule-container');
     let scheduleHTML = '';
@@ -81,7 +84,6 @@ function displaySchedule() {
             <div class="route-section">
                 <h3 class="route-title">${route.name}</h3>
                 <h4 class="location-title">${route.location}</h4>
-                
                 <div class="trips-container">
                     ${route.trips.map(trip => `
                         <div class="trip-card ${trip.returnTrip ? 'return-trip' : ''}">
@@ -155,8 +157,8 @@ function initializeSearch() {
 function updateDropdown(searchTerm, stations) {
     const dropdown = document.getElementById('searchDropdown');
     dropdown.innerHTML = '';
-    
-    const filteredStations = stations.filter(station => 
+
+    const filteredStations = stations.filter(station =>
         station.toLowerCase().includes(searchTerm)
     );
 
@@ -197,10 +199,10 @@ function findRouteInfo(station) {
 function selectStation(station) {
     const searchInput = document.getElementById('searchInput');
     const dropdown = document.getElementById('searchDropdown');
-    
+
     searchInput.value = station;
     dropdown.classList.remove('show');
-    
+
     // Show relevant route sections
     showRelevantRoutes(station);
 }
@@ -208,11 +210,11 @@ function selectStation(station) {
 // Show routes relevant to selected station
 function showRelevantRoutes(station) {
     const routeSections = document.querySelectorAll('.route-section');
-    
+
     routeSections.forEach(section => {
         section.style.display = 'none';
         const routeTrips = section.querySelectorAll('.schedule-table tr');
-        
+
         routeTrips.forEach(row => {
             const stationCell = row.querySelector('td:first-child');
             if (stationCell && stationCell.textContent === station) {
@@ -229,37 +231,4 @@ function showRelevantRoutes(station) {
     if (firstVisibleRoute) {
         firstVisibleRoute.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-}
-
-// Function to check if the selected city is available
-function checkCity(city) {
-    const availableCities = ['Cape Town']; // Add more cities as needed
-    const topHeader = document.querySelector('.Top_header');
-    
-    if (!availableCities.includes(city)) {
-        topHeader.classList.add('error');
-        // Show error message
-        const addressLocation = document.querySelector('.address_location');
-        const errorMsg = document.createElement('span');
-        errorMsg.className = 'error-message';
-        errorMsg.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Service not available in this city';
-        
-        // Remove any existing error message
-        const existingError = addressLocation.querySelector('.error-message');
-        if (existingError) {
-            existingError.remove();
-        }
-        
-        addressLocation.appendChild(errorMsg);
-        
-        // Remove error state after 5 seconds
-        setTimeout(() => {
-            topHeader.classList.remove('error');
-            errorMsg.remove();
-        }, 5000);
-        
-        return false;
-    }
-    
-    return true;
 }
