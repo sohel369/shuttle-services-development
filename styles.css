@@ -17,7 +17,7 @@ header {
     left: 0;
     width: 100%;
     background: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
 
@@ -251,7 +251,7 @@ main {
 
 .hero {
     background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)),
-                url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+        url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -275,7 +275,7 @@ main {
     border-radius: 10px;
     width: 90%;
     max-width: 600px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .search-box {
@@ -329,7 +329,7 @@ main {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 0 0 5px 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-height: 300px;
     overflow-y: auto;
     z-index: 1000;
@@ -370,7 +370,8 @@ main {
 }
 
 /* Routes Section */
-.routes-section, .schedules-section {
+.routes-section,
+.schedules-section {
     padding: 4rem 5%;
     max-width: 1200px;
     margin: 0 auto;
@@ -387,7 +388,7 @@ main {
     background: white;
     border-radius: 10px;
     padding: 1.5rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -400,7 +401,7 @@ main {
     background: white;
     border-radius: 10px;
     padding: 2rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 2rem;
 }
 
@@ -439,7 +440,7 @@ main {
     background: #f8f9fa;
     border-radius: 8px;
     padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .trip-card h4 {
@@ -692,15 +693,15 @@ main {
     .nav-links {
         display: none;
     }
-    
+
     .hero {
         height: 70vh;
     }
-    
+
     .search-box {
         flex-direction: column;
     }
-    
+
     .search-box input,
     .search-box button {
         width: 100%;
@@ -765,7 +766,7 @@ footer {
     text-align: center;
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Night Shift Schedule Styles */
