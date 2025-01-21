@@ -63,7 +63,7 @@ const routes = [
         ]
     },
     {
-        location: 'SUMMERSTRAND CAMPUSES - MISSIONVALE CAMPUS',
+        location: 'SUMMERSTRAND CAMPUSES to MISSIONVALE CAMPUS',
         name: 'Route 3 (Summerstrand Campuses - Missionvale Campus)',
         trips: [
             {
@@ -494,6 +494,137 @@ const routes = [
                     { station: 'Forrest Hill', time: '17:45' },
                     { station: 'Forrest Hill Garage,Morestond Flats,Back of Stadium', time: '17:50' },
                     { station: 'HUMEWOOD-Kings Beach Bus Stop', time: '18:00' }
+                ]
+            }
+        ]
+    },
+    {
+        location: 'SUMMERSTRAND TO TOWN - NIGHT SHIFT',
+        name: 'Night Shift - Summerstrand to Town',
+        trips: [
+            {
+                name: 'Night Trip 1',
+                stops: [
+                    { station: 'South Campus Shuttle Stop', time: '18h30' },
+                    { station: 'North and 2nd Ave campuses', time: '18h45' },
+                    { station: 'Feather Market Hall', time: '19h00' }
+                ]
+            },
+            {
+                name: 'Night Trip 2',
+                stops: [
+                    { station: 'South Campus Shuttle Stop', time: '20h30' },
+                    { station: 'North and 2nd Ave campuses', time: '20h45' },
+                    { station: 'Feather Market Hall', time: '21h00' }
+                ]
+            },
+            {
+                name: 'Night Trip 3',
+                stops: [
+                    { station: 'South Campus Shuttle Stop', time: '22h00' },
+                    { station: 'North and 2nd Ave campuses', time: '22h15' },
+                    { station: 'Feather Market Hall', time: '22h30' }
+                ]
+            }
+        ]
+    },
+    {
+        location: 'SUMMERSTRAND AND HUMEWOOD - NIGHT SHIFT',
+        name: 'Night Shift - Summerstrand and Humewood Route',
+        trips: [
+            {
+                name: 'Night Trip 1',
+                stops: [
+                    { station: 'North and 2nd Ave Campuses', time: '18h30' },
+                    { station: 'Alashan Drive / Amery Crescent', time: '18h45' },
+                    { station: 'Via Spar', time: '18h50' },
+                    { station: 'Via Nobbs Str', time: '18h55' },
+                    { station: 'Via Pick n Pay, Summerstrand Village', time: '19h00' },
+                    { station: 'Stops in Humewood', time: '19h10' },
+                    { station: 'Forest Hill', time: '19h20' }
+                ]
+            },
+            {
+                name: 'Night Trip 2',
+                stops: [
+                    { station: 'North and 2nd Ave Campuses', time: '20h30' },
+                    { station: 'Alashan Drive / Amery Crescent', time: '20h45' },
+                    { station: 'Via Spar', time: '20h50' },
+                    { station: 'Via Nobbs Str', time: '20h55' },
+                    { station: 'Via Pick n Pay, Summerstrand Village', time: '21h00' },
+                    { station: 'Stops in Humewood', time: '21h10' },
+                    { station: 'Forest Hill', time: '21h20' }
+                ]
+            },
+            {
+                name: 'Night Trip 3',
+                stops: [
+                    { station: 'North and 2nd Ave Campuses', time: '22h00' },
+                    { station: 'Alashan Drive / Amery Crescent', time: '22h15' },
+                    { station: 'Via Spar', time: '22h20' },
+                    { station: 'Via Nobbs Str', time: '22h25' },
+                    { station: 'Via Pick n Pay, Summerstrand Village', time: '22h30' },
+                    { station: 'Stops in Humewood', time: '22h40' },
+                    { station: 'Forest Hill', time: '22h50' }
+                ]
+            }
+        ]
+    },
+    {
+        location: 'SUMMERSTRAND TO PIER 14 - NIGHT SHIFT',
+        name: 'Night Shift - Summerstrand to Pier 14/Mount Road',
+        trips: [
+            {
+                name: 'Night Trip 1',
+                stops: [
+                    { station: 'South Campus Shuttle Stop', time: '18h30' },
+                    { station: 'North and 2nd Ave Campuses', time: '18h45' },
+                    { station: 'Kings Res', time: '19h00' },
+                    { station: 'Lavinia Res', time: '19h10' },
+                    { station: 'Dynamic Accommodation', time: '19h20' },
+                    { station: 'Rainbow House', time: '19h30' }
+                ]
+            },
+            {
+                name: 'Night Trip 2',
+                stops: [
+                    { station: 'South Campus Shuttle Stop', time: '20h30' },
+                    { station: 'North and 2nd Ave Campuses', time: '20h45' },
+                    { station: 'Kings Res', time: '21h00' },
+                    { station: 'Lavinia Res', time: '21h10' },
+                    { station: 'Dynamic Accommodation', time: '21h20' },
+                    { station: 'Rainbow House', time: '21h30' }
+                ]
+            },
+            {
+                name: 'Night Trip 3',
+                stops: [
+                    { station: 'South Campus Shuttle Stop', time: '22h00' },
+                    { station: 'North and 2nd Ave Campuses', time: '22h15' },
+                    { station: 'Kings Res', time: '22h30' },
+                    { station: 'Lavinia Res', time: '22h40' },
+                    { station: 'Dynamic Accommodation', time: '22h50' },
+                    { station: 'Rainbow House', time: '23h00' }
+                ]
+            }
+        ]
+    },
+    {
+        location: 'SUMMERSTRAND TO MISSIONVALE/UITENHAGE - NIGHT SHIFT',
+        name: 'Night Shift - Summerstrand to Missionvale/Uitenhage',
+        trips: [
+            {
+                name: 'Night Trip 1',
+                stops: [
+                    { station: 'Missionvale Campus', time: '18h30' },
+                    { station: 'Uitenhage and surrounds pickup', time: '18h45' }
+                ]
+            },
+            {
+                name: 'Night Trip 2',
+                stops: [
+                    { station: 'Missionvale Campus', time: '20h30' },
+                    { station: 'Uitenhage and surrounds pickup', time: '20h45' }
                 ]
             }
         ]
