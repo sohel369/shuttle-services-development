@@ -476,7 +476,7 @@ main {
 
 /* Override return trip for consistency */
 .return-trip {
-    background: linear-gradient(150deg, #0099ff 0%, #0077ff 100%);
+    background: linear-gradient(150deg, #b2bac0 0%, #0077ff 100%);
 }
 
 /* Schedule Section */
@@ -535,22 +535,28 @@ main {
 }
 
 .trip-card .schedule-table thead tr {
-    background: rgba(184, 15, 15, 0.1);
+    /* background: rgba(184, 15, 15, 0.1); */
+    background: #59a6ff;
     border-radius: 8px;
     margin-bottom: 15px;
 }
 
 .trip-card .schedule-table th {
     color: rgba(255, 255, 255, 0.7);
-    /* background: transparent; */
-    background: linear-gradient(150deg, #67c1fdb2 0%, #75aef0 100%);
+    /* background: linear-gradient(150deg, #67c1fd3f 0%, #75aef0c2 100%) !important; */
+    background: #59a6ff;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 1px;
     padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 8px;
+}
+
+.trip-card .schedule-table th:last-child {
+    border-top-right-radius: 8px;
+    background: #59a6ff;
 }
 
 .trip-card .schedule-table td {
@@ -569,7 +575,7 @@ main {
     border-collapse: collapse;
     margin-top: 1rem;
     /* background: #5ebdd5; */
-    background: linear-gradient(150deg, #7fccffd7 0%, #75aef080 100%);
+    background: linear-gradient(150deg, #7fccff48 0%, #75aef062 100%);
     border-radius: 10px;
 }
 
