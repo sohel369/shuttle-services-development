@@ -70,165 +70,396 @@
             <div class="container">
                 <h2>Shuttle Service Routes and Schedules</h2>
 
-                <!-- Route 1 -->
-                <div class="route-section">
-                    <h3>Route 1: Uitenhage to Summerstrand Campuses</h3>
-                    <div class="route-trips">
-                        <div class="trip-table">
-                            <h4>Morning Trips</h4>
-                            <table>
-                                <tr>
-                                    <th>Location</th>
-                                    <th>Trip 1</th>
-                                    <th>Trip 2</th>
-                                </tr>
-                                <tr>
-                                    <td>Uitenhage Metro railway station</td>
-                                    <td>06h20</td>
-                                    <td>08h20</td>
-                                </tr>
-                                <tr>
-                                    <td>Missionvale Campus</td>
-                                    <td>06h45</td>
-                                    <td>08h45</td>
-                                </tr>
-                                <tr>
-                                    <td>Shatterproof</td>
-                                    <td>06h50</td>
-                                    <td>08h50</td>
-                                </tr>
-                                <tr>
-                                    <td>2nd Ave Campus, North Campus</td>
-                                    <td>07h20</td>
-                                    <td>09h20</td>
-                                </tr>
-                                <tr>
-                                    <td>Arrives at South campus</td>
-                                    <td>07h30</td>
-                                    <td>09h30</td>
-                                </tr>
-                            </table>
+                <!-- Schedule Navigation -->
+                <div class="schedule-nav">
+                    <button class="schedule-btn active" onclick="showSchedule('routes')">Routes</button>
+                    <button class="schedule-btn" onclick="showSchedule('semester1')">1st Semester</button>
+                    <button class="schedule-btn" onclick="showSchedule('semester2')">2nd Semester</button>
+                    <button class="schedule-btn" onclick="showSchedule('exam')">Exam Schedule</button>
+                </div>
+                <div class="schedule-nav" style="margin-top: 10px;">
+                    <button class="schedule-btn" onclick="showSchedule('morning')">Morning Shuttle</button>
+                    <button class="schedule-btn" onclick="showSchedule('evening')">Evening Shuttle</button>
+                    <button class="schedule-btn" onclick="showSchedule('night')">Night Shuttle</button>
+                </div>
+
+                <!-- Routes Section -->
+                <div class="schedule-content" id="routes-schedule">
+                    <!-- Route 1 -->
+                    <div class="route-section">
+                        <h3>Route 1: Uitenhage to Summerstrand Campuses</h3>
+                        <div class="route-trips">
+                            <div class="trip-table">
+                                <h4>Morning Trips</h4>
+                                <table>
+                                    <tr>
+                                        <th>Location</th>
+                                        <th>Trip 1</th>
+                                        <th>Trip 2</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Uitenhage Metro railway station</td>
+                                        <td>06h20</td>
+                                        <td>08h20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Missionvale Campus</td>
+                                        <td>06h45</td>
+                                        <td>08h45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shatterproof</td>
+                                        <td>06h50</td>
+                                        <td>08h50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2nd Ave Campus, North Campus</td>
+                                        <td>07h20</td>
+                                        <td>09h20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Arrives at South campus</td>
+                                        <td>07h30</td>
+                                        <td>09h30</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Route 2 -->
+                    <div class="route-section">
+                        <h3>Route 2: Missionvale to Summerstrand Campuses</h3>
+                        <div class="route-trips">
+                            <div class="trip-table">
+                                <h4>Morning Trips</h4>
+                                <table>
+                                    <tr>
+                                        <th>Location</th>
+                                        <th>Trip 1</th>
+                                        <th>Trip 2</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Missionvale Campus</td>
+                                        <td>06h40</td>
+                                        <td>09h00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shatterproof</td>
+                                        <td>06h45</td>
+                                        <td>09h20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2nd Ave Campus, North Campus</td>
+                                        <td>07h05</td>
+                                        <td>09h45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Arrives at South campus</td>
+                                        <td>07h10</td>
+                                        <td>09h50</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Route 3 -->
+                    <div class="route-section">
+                        <h3>Route 3: Summerstrand Campuses to Missionvale Campus</h3>
+                        <div class="route-trips">
+                            <div class="trip-table">
+                                <h4>Morning Trips</h4>
+                                <table>
+                                    <tr>
+                                        <th>Location</th>
+                                        <th>Trip 1</th>
+                                        <th>Trip 2</th>
+                                    </tr>
+                                    <tr>
+                                        <td>South Campus</td>
+                                        <td>07h00</td>
+                                        <td>09h00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>North campus</td>
+                                        <td>07h05</td>
+                                        <td>09h05</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2nd Avenue</td>
+                                        <td>07h10</td>
+                                        <td>09h10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Humewood / Kings Beach</td>
+                                        <td>07h15</td>
+                                        <td>09h15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Arrives at Missionvale Campus</td>
+                                        <td>07h50</td>
+                                        <td>09h50</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Routes 4-11 -->
+                    <div class="route-section">
+                        <h3>Additional Routes Available</h3>
+                        <div class="route-list">
+                            <div class="route-item">
+                                <h4>Route 4: Korsten to Summerstrand Campuses</h4>
+                                <p>Multiple trips available starting from 06h40</p>
+                            </div>
+                            <div class="route-item">
+                                <h4>Route 5: Sydenham-Varsity Park-Law Courts-Mount Road-Pier 14</h4>
+                                <p>Multiple trips available starting from 06h40</p>
+                            </div>
+                            <div class="route-item">
+                                <h4>Route 6: Central to Summerstrand Campuses</h4>
+                                <p>Multiple trips available starting from 06h40</p>
+                            </div>
+                            <div class="route-item">
+                                <h4>Route 7: Feathermarket to Summerstrand Campuses</h4>
+                                <p>Multiple trips available starting from 07h00</p>
+                            </div>
+                            <div class="route-item">
+                                <h4>Route 8: Walmer to Summerstrand Campuses</h4>
+                                <p>Multiple trips available starting from 06h40</p>
+                            </div>
+                            <div class="route-item">
+                                <h4>Route 9: Humewood/Forrest Hill to Summerstrand Campuses</h4>
+                                <p>Multiple trips available starting from 07h00</p>
+                            </div>
+                            <div class="route-item">
+                                <h4>Route 10: Summerstrand Intercampus Hopper</h4>
+                                <p>Regular trips between South Campus and various stops</p>
+                            </div>
+                            <div class="route-item">
+                                <h4>Route 11: Summerstrand Student Village to Campuses</h4>
+                                <p>Multiple trips available starting from 06h45</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Route 2 -->
-                <div class="route-section">
-                    <h3>Route 2: Missionvale to Summerstrand Campuses</h3>
-                    <div class="route-trips">
-                        <div class="trip-table">
-                            <h4>Morning Trips</h4>
-                            <table>
-                                <tr>
-                                    <th>Location</th>
-                                    <th>Trip 1</th>
-                                    <th>Trip 2</th>
-                                </tr>
-                                <tr>
-                                    <td>Missionvale Campus</td>
-                                    <td>06h40</td>
-                                    <td>09h00</td>
-                                </tr>
-                                <tr>
-                                    <td>Shatterproof</td>
-                                    <td>06h45</td>
-                                    <td>09h20</td>
-                                </tr>
-                                <tr>
-                                    <td>2nd Ave Campus, North Campus</td>
-                                    <td>07h05</td>
-                                    <td>09h45</td>
-                                </tr>
-                                <tr>
-                                    <td>Arrives at South campus</td>
-                                    <td>07h10</td>
-                                    <td>09h50</td>
-                                </tr>
-                            </table>
+                <!-- 1st Semester Schedule -->
+                <div class="schedule-content" id="semester1-schedule" style="display: none;">
+                    <div class="route-section">
+                        <h3>1st Semester Shuttle Schedule</h3>
+                        <div class="route-trips">
+                            <div class="trip-table">
+                                <table>
+                                    <tr>
+                                        <th>Day</th>
+                                        <th>Morning Trip</th>
+                                        <th>Afternoon Trip</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Monday - Thursday</td>
+                                        <td>07:30 - 12:30</td>
+                                        <td>14:00 - 17:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Friday</td>
+                                        <td>07:30 - 12:30</td>
+                                        <td>14:00 - 16:00</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Route 3 -->
-                <div class="route-section">
-                    <h3>Route 3: Summerstrand Campuses to Missionvale Campus</h3>
-                    <div class="route-trips">
-                        <div class="trip-table">
-                            <h4>Morning Trips</h4>
-                            <table>
-                                <tr>
-                                    <th>Location</th>
-                                    <th>Trip 1</th>
-                                    <th>Trip 2</th>
-                                </tr>
-                                <tr>
-                                    <td>South Campus</td>
-                                    <td>07h00</td>
-                                    <td>09h00</td>
-                                </tr>
-                                <tr>
-                                    <td>North campus</td>
-                                    <td>07h05</td>
-                                    <td>09h05</td>
-                                </tr>
-                                <tr>
-                                    <td>2nd Avenue</td>
-                                    <td>07h10</td>
-                                    <td>09h10</td>
-                                </tr>
-                                <tr>
-                                    <td>Humewood / Kings Beach</td>
-                                    <td>07h15</td>
-                                    <td>09h15</td>
-                                </tr>
-                                <tr>
-                                    <td>Arrives at Missionvale Campus</td>
-                                    <td>07h50</td>
-                                    <td>09h50</td>
-                                </tr>
-                            </table>
+                <!-- 2nd Semester Schedule -->
+                <div class="schedule-content" id="semester2-schedule" style="display: none;">
+                    <div class="route-section">
+                        <h3>2nd Semester Shuttle Schedule</h3>
+                        <div class="route-trips">
+                            <div class="trip-table">
+                                <table>
+                                    <tr>
+                                        <th>Day</th>
+                                        <th>Morning Trip</th>
+                                        <th>Afternoon Trip</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Monday - Thursday</td>
+                                        <td>07:30 - 12:30</td>
+                                        <td>14:00 - 17:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Friday</td>
+                                        <td>07:30 - 12:30</td>
+                                        <td>14:00 - 16:00</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Routes 4-11 -->
-                <div class="route-section">
-                    <h3>Additional Routes Available</h3>
-                    <div class="route-list">
-                        <div class="route-item">
-                            <h4>Route 4: Korsten to Summerstrand Campuses</h4>
-                            <p>Multiple trips available starting from 06h40</p>
-                        </div>
-                        <div class="route-item">
-                            <h4>Route 5: Sydenham-Varsity Park-Law Courts-Mount Road-Pier 14</h4>
-                            <p>Multiple trips available starting from 06h40</p>
-                        </div>
-                        <div class="route-item">
-                            <h4>Route 6: Central to Summerstrand Campuses</h4>
-                            <p>Multiple trips available starting from 06h40</p>
-                        </div>
-                        <div class="route-item">
-                            <h4>Route 7: Feathermarket to Summerstrand Campuses</h4>
-                            <p>Multiple trips available starting from 07h00</p>
-                        </div>
-                        <div class="route-item">
-                            <h4>Route 8: Walmer to Summerstrand Campuses</h4>
-                            <p>Multiple trips available starting from 06h40</p>
-                        </div>
-                        <div class="route-item">
-                            <h4>Route 9: Humewood/Forrest Hill to Summerstrand Campuses</h4>
-                            <p>Multiple trips available starting from 07h00</p>
-                        </div>
-                        <div class="route-item">
-                            <h4>Route 10: Summerstrand Intercampus Hopper</h4>
-                            <p>Regular trips between South Campus and various stops</p>
-                        </div>
-                        <div class="route-item">
-                            <h4>Route 11: Summerstrand Student Village to Campuses</h4>
-                            <p>Multiple trips available starting from 06h45</p>
+                <!-- Exam Schedule -->
+                <div class="schedule-content" id="exam-schedule" style="display: none;">
+                    <div class="route-section">
+                        <h3>Examination Period Shuttle Schedule</h3>
+                        <div class="route-trips">
+                            <div class="trip-table">
+                                <table>
+                                    <tr>
+                                        <th>Exam Period</th>
+                                        <th>Morning Session</th>
+                                        <th>Afternoon Session</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Main Examinations</td>
+                                        <td>08:30 - 11:30</td>
+                                        <td>14:00 - 17:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Supplementary Examinations</td>
+                                        <td>09:00 - 12:00</td>
+                                        <td>14:00 - 17:00</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Morning Shuttle Schedule -->
+                <div class="schedule-content" id="morning-schedule" style="display: none;">
+                    <div class="route-section">
+                        <h3>Morning Shuttle Schedule</h3>
+                        <div class="route-trips">
+                            <div class="trip-table">
+                                <table>
+                                    <tr>
+                                        <th>Route</th>
+                                        <th>Pick-up Point</th>
+                                        <th>Time</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Main Campus</td>
+                                        <td>Student Center</td>
+                                        <td>06:30 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Residence Hall</td>
+                                        <td>Building A</td>
+                                        <td>07:00 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>City Express</td>
+                                        <td>Central Station</td>
+                                        <td>07:30 AM</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evening Shuttle Schedule -->
+                <div class="schedule-content" id="evening-schedule" style="display: none;">
+                    <div class="route-section">
+                        <h3>Evening Shuttle Schedule</h3>
+                        <div class="route-trips">
+                            <div class="trip-table">
+                                <table>
+                                    <tr>
+                                        <th>Route</th>
+                                        <th>Pick-up Point</th>
+                                        <th>Time</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Main Campus</td>
+                                        <td>Library</td>
+                                        <td>4:30 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Residence Hall</td>
+                                        <td>Building B</td>
+                                        <td>5:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>City Express</td>
+                                        <td>Central Station</td>
+                                        <td>5:30 PM</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Night Shuttle Schedule -->
+                <div class="schedule-content" id="night-schedule" style="display: none;">
+                    <div class="route-section">
+                        <h3>Night Shuttle Schedule</h3>
+                        <div class="route-trips">
+                            <div class="trip-table">
+                                <table>
+                                    <tr>
+                                        <th>Route</th>
+                                        <th>Pick-up Point</th>
+                                        <th>Time</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Main Campus</td>
+                                        <td>Student Center</td>
+                                        <td>8:30 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Library Express</td>
+                                        <td>Main Library</td>
+                                        <td>9:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Shuttle</td>
+                                        <td>All Stops</td>
+                                        <td>10:00 PM</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .schedule-nav {
+                        display: flex;
+                        justify-content: center;
+                        gap: 10px;
+                        margin-bottom: 20px;
+                    }
+
+                    .schedule-btn {
+                        padding: 10px 20px;
+                        border: none;
+                        background-color: #f0f0f0;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        transition: background-color 0.3s;
+                    }
+
+                    .schedule-btn.active {
+                        background-color: #007bff;
+                        color: white;
+                    }
+
+                    .schedule-btn:hover {
+                        background-color: #007bff;
+                        color: white;
+                    }
+
+                    .schedule-content {
+                        margin-top: 20px;
+                    }
+                </style>
 
                 <!-- Contact Information -->
                 <div class="contact-section">
@@ -263,6 +494,321 @@
             <p>&copy; 2024 ShuttleService. All rights reserved.</p>
         </div>
     </footer>
+
+    <div id="examScheduleModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+        background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.2); z-index: 1000; 
+        max-width: 600px; width: 90%;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h3 style="margin: 0; color: #007bff;">Exam Schedule Details</h3>
+            <button onclick="closeModal('examScheduleModal')"
+                style="background: none; border: none; font-size: 20px; cursor: pointer; color: #666;">&times;</button>
+        </div>
+        <div class="current-time-display"
+            style="text-align: center; margin: 10px 0; padding: 10px; background: rgba(0, 123, 255, 0.1); border-radius: 5px;">
+            <span style="font-weight: bold; color: #007bff;">Current Time: </span>
+            <span id="modalExamTimeDisplay"></span>
+        </div>
+        <div class="exam-schedule-content" style="margin-top: 20px;">
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr style="background: #f8f9fa;">
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Exam Period</th>
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Morning Session</th>
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Afternoon Session</th>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Main Examinations</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">08:30 - 11:30</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">14:00 - 17:00</td>
+                </tr>
+                <tr style="background: #f8f9fa;">
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Supplementary Examinations</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">09:00 - 12:00</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">14:00 - 17:00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="semester1Modal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+        background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.2); z-index: 1000; 
+        max-width: 600px; width: 90%;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h3 style="margin: 0; color: #007bff;">1st Semester Schedule Details</h3>
+            <button onclick="closeModal('semester1Modal')"
+                style="background: none; border: none; font-size: 20px; cursor: pointer; color: #666;">&times;</button>
+        </div>
+        <div class="current-time-display"
+            style="text-align: center; margin: 10px 0; padding: 10px; background: rgba(0, 123, 255, 0.1); border-radius: 5px;">
+            <span style="font-weight: bold; color: #007bff;">Current Time: </span>
+            <span id="semester1TimeDisplay"></span>
+        </div>
+        <div class="schedule-content" style="margin-top: 20px;">
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr style="background: #f8f9fa;">
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Day</th>
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Morning Trip</th>
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Afternoon Trip</th>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Monday - Thursday</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">07:30 - 12:30</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">14:00 - 17:00</td>
+                </tr>
+                <tr style="background: #f8f9fa;">
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Friday</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">07:30 - 12:30</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">14:00 - 16:00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="semester2Modal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+        background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.2); z-index: 1000; 
+        max-width: 600px; width: 90%;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h3 style="margin: 0; color: #007bff;">2nd Semester Schedule Details</h3>
+            <button onclick="closeModal('semester2Modal')"
+                style="background: none; border: none; font-size: 20px; cursor: pointer; color: #666;">&times;</button>
+        </div>
+        <div class="current-time-display"
+            style="text-align: center; margin: 10px 0; padding: 10px; background: rgba(0, 123, 255, 0.1); border-radius: 5px;">
+            <span style="font-weight: bold; color: #007bff;">Current Time: </span>
+            <span id="semester2TimeDisplay"></span>
+        </div>
+        <div class="schedule-content" style="margin-top: 20px;">
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr style="background: #f8f9fa;">
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Day</th>
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Morning Trip</th>
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Afternoon Trip</th>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Monday - Thursday</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">07:30 - 12:30</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">14:00 - 17:00</td>
+                </tr>
+                <tr style="background: #f8f9fa;">
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Friday</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">07:30 - 12:30</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">14:00 - 16:00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="morningModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+        background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.2); z-index: 1000; 
+        max-width: 600px; width: 90%;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h3 style="margin: 0; color: #007bff;">Morning Shuttle Schedule</h3>
+            <button onclick="closeModal('morningModal')"
+                style="background: none; border: none; font-size: 20px; cursor: pointer; color: #666;">&times;</button>
+        </div>
+        <div class="current-time-display"
+            style="text-align: center; margin: 10px 0; padding: 10px; background: rgba(0, 123, 255, 0.1); border-radius: 5px;">
+            <span style="font-weight: bold; color: #007bff;">Current Time: </span>
+            <span id="morningTimeDisplay"></span>
+        </div>
+        <div class="schedule-content" style="margin-top: 20px;">
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr style="background: #f8f9fa;">
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Route</th>
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Pick-up Point</th>
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Time</th>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Main Campus</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Student Center</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">06:30 AM</td>
+                </tr>
+                <tr style="background: #f8f9fa;">
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Residence Hall</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Building A</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">07:00 AM</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">City Express</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Central Station</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">07:30 AM</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="eveningModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+        background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.2); z-index: 1000; 
+        max-width: 600px; width: 90%;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h3 style="margin: 0; color: #007bff;">Evening Shuttle Schedule</h3>
+            <button onclick="closeModal('eveningModal')"
+                style="background: none; border: none; font-size: 20px; cursor: pointer; color: #666;">&times;</button>
+        </div>
+        <div class="current-time-display"
+            style="text-align: center; margin: 10px 0; padding: 10px; background: rgba(0, 123, 255, 0.1); border-radius: 5px;">
+            <span style="font-weight: bold; color: #007bff;">Current Time: </span>
+            <span id="eveningTimeDisplay"></span>
+        </div>
+        <div class="schedule-content" style="margin-top: 20px;">
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr style="background: #f8f9fa;">
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Route</th>
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Pick-up Point</th>
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Time</th>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Main Campus</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Library</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">4:30 PM</td>
+                </tr>
+                <tr style="background: #f8f9fa;">
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Residence Hall</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Building B</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">5:00 PM</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">City Express</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Central Station</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">5:30 PM</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="nightModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+        background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.2); z-index: 1000; 
+        max-width: 600px; width: 90%;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h3 style="margin: 0; color: #007bff;">Night Shuttle Schedule</h3>
+            <button onclick="closeModal('nightModal')"
+                style="background: none; border: none; font-size: 20px; cursor: pointer; color: #666;">&times;</button>
+        </div>
+        <div class="current-time-display"
+            style="text-align: center; margin: 10px 0; padding: 10px; background: rgba(0, 123, 255, 0.1); border-radius: 5px;">
+            <span style="font-weight: bold; color: #007bff;">Current Time: </span>
+            <span id="nightTimeDisplay"></span>
+        </div>
+        <div class="schedule-content" style="margin-top: 20px;">
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr style="background: #f8f9fa;">
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Route</th>
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Pick-up Point</th>
+                    <th style="padding: 12px; border: 1px solid #dee2e6;">Time</th>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Main Campus</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Student Center</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">8:30 PM</td>
+                </tr>
+                <tr style="background: #f8f9fa;">
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Library Express</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Main Library</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">9:00 PM</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">Last Shuttle</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">All Stops</td>
+                    <td style="padding: 12px; border: 1px solid #dee2e6;">10:00 PM</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Add modal overlay -->
+    <div id="modalOverlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+        background: rgba(0,0,0,0.5); z-index: 999;"></div>
+
+    <script>
+        function showSchedule(scheduleType) {
+            // Hide all schedule contents
+            document.querySelectorAll('.schedule-content').forEach(content => {
+                content.style.display = 'none';
+            });
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.schedule-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected schedule content
+            document.getElementById(scheduleType + '-schedule').style.display = 'block';
+
+            // Add active class to clicked button
+            event.target.classList.add('active');
+
+            // Clear any existing intervals
+            if (window.timeInterval) {
+                clearInterval(window.timeInterval);
+            }
+
+            // Show modal based on schedule type
+            switch (scheduleType) {
+                case 'exam':
+                    showModal('examScheduleModal', 'modalExamTimeDisplay');
+                    break;
+                case 'semester1':
+                    showModal('semester1Modal', 'semester1TimeDisplay');
+                    break;
+                case 'semester2':
+                    showModal('semester2Modal', 'semester2TimeDisplay');
+                    break;
+                case 'morning':
+                    showModal('morningModal', 'morningTimeDisplay');
+                    break;
+                case 'evening':
+                    showModal('eveningModal', 'eveningTimeDisplay');
+                    break;
+                case 'night':
+                    showModal('nightModal', 'nightTimeDisplay');
+                    break;
+            }
+        }
+
+        function showModal(modalId, timeDisplayId) {
+            // Show the modal and overlay
+            document.getElementById(modalId).style.display = 'block';
+            document.getElementById('modalOverlay').style.display = 'block';
+
+            // Update and start the time display
+            function updateTime() {
+                const now = new Date();
+                const hours = now.getHours().toString().padStart(2, '0');
+                const minutes = now.getMinutes().toString().padStart(2, '0');
+                const seconds = now.getSeconds().toString().padStart(2, '0');
+                document.getElementById(timeDisplayId).textContent = `${hours}:${minutes}:${seconds}`;
+            }
+
+            // Update time immediately and start interval
+            updateTime();
+            window.timeInterval = setInterval(updateTime, 1000);
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.getElementById('modalOverlay').style.display = 'none';
+
+            // Clear the time interval
+            if (window.timeInterval) {
+                clearInterval(window.timeInterval);
+            }
+        }
+
+        // Close modal when clicking overlay
+        document.getElementById('modalOverlay').onclick = function () {
+            document.getElementById('examScheduleModal').style.display = 'none';
+            document.getElementById('semester1Modal').style.display = 'none';
+            document.getElementById('semester2Modal').style.display = 'none';
+            document.getElementById('morningModal').style.display = 'none';
+            document.getElementById('eveningModal').style.display = 'none';
+            document.getElementById('nightModal').style.display = 'none';
+            document.getElementById('modalOverlay').style.display = 'none';
+
+            // Clear the time interval
+            if (window.timeInterval) {
+                clearInterval(window.timeInterval);
+            }
+        };
+    </script>
 
     <script src="script.js"></script>
 </body>

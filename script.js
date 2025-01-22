@@ -800,3 +800,93 @@ function showRelevantRoutes(station) {
         firstVisibleRoute.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }
+
+function showSchedule(scheduleType) {
+    // Hide all schedule contents
+    document.querySelectorAll('.schedule-content').forEach(content => {
+        content.style.display = 'none';
+    });
+
+    // Remove active class from all buttons
+    document.querySelectorAll('.schedule-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    // Show selected schedule content
+    document.getElementById(scheduleType + '-schedule').style.display = 'block';
+
+    // Add active class to clicked button
+    event.target.classList.add('active');
+
+    // Clear any existing intervals
+    if (window.timeInterval) {
+        clearInterval(window.timeInterval);
+    }
+
+    // Show modal based on schedule type
+    switch (scheduleType) {
+        case 'exam':
+            showModal('examScheduleModal', 'modalExamTimeDisplay');
+            break;
+        case 'semester1':
+            showModal('semester1Modal', 'semester1TimeDisplay');
+            break;
+        case 'semester2':
+            showModal('semester2Modal', 'semester2TimeDisplay');
+            break;
+        case 'morning':
+            showModal('morningModal', 'morningTimeDisplay');
+            break;
+        case 'evening':
+            showModal('eveningModal', 'eveningTimeDisplay');
+            break;
+        case 'night':
+            showModal('nightModal', 'nightTimeDisplay');
+            break;
+    }
+}
+
+function showModal(modalId, timeDisplayId) {
+    // Show the modal and overlay
+    document.getElementById(modalId).style.display = 'block';
+    document.getElementById('modalOverlay').style.display = 'block';
+
+    // Update and start the time display
+    function updateTime() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const seconds = now.getSeconds().toString().padStart(2, '0');
+        document.getElementById(timeDisplayId).textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    // Update time immediately and start interval
+    updateTime();
+    window.timeInterval = setInterval(updateTime, 1000);
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+    document.getElementById('modalOverlay').style.display = 'none';
+
+    // Clear the time interval
+    if (window.timeInterval) {
+        clearInterval(window.timeInterval);
+    }
+}
+
+// Close modal when clicking overlay
+document.getElementById('modalOverlay').onclick = function () {
+    document.getElementById('examScheduleModal').style.display = 'none';
+    document.getElementById('semester1Modal').style.display = 'none';
+    document.getElementById('semester2Modal').style.display = 'none';
+    document.getElementById('morningModal').style.display = 'none';
+    document.getElementById('eveningModal').style.display = 'none';
+    document.getElementById('nightModal').style.display = 'none';
+    document.getElementById('modalOverlay').style.display = 'none';
+
+    // Clear the time interval
+    if (window.timeInterval) {
+        clearInterval(window.timeInterval);
+    }
+};
