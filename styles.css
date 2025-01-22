@@ -385,15 +385,98 @@ main {
 }
 
 .route-card {
-    background: white;
-    border-radius: 10px;
+    background: linear-gradient(150deg, #0099ff 0%, #0077ff 100%);
+    border-radius: 15px;
     padding: 1.5rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 .route-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(76, 228, 255, 0.15);
+    border-color: rgba(76, 228, 255, 0.3);
+}
+
+.route-card h3 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.route-card .route-details {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.route-card .time-info {
+    color: #07c8d6;
+    font-weight: 500;
+}
+
+.route-card .price {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    background: rgba(76, 228, 255, 0.1);
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.route-card .book-button {
+    background: linear-gradient(45deg, #07c8d6, #4ce4ff);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.route-card .book-button:hover {
+    background: linear-gradient(45deg, #06b7c4, #3ad1ee);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 228, 255, 0.3);
+}
+
+.route-card .schedule-table thead tr {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.route-card .schedule-table th {
+    color: rgba(255, 255, 255, 0.7);
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    border: none;
+}
+
+.route-card .schedule-table td {
+    color: white;
+    padding: 8px 15px;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.route-card .schedule-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Override return trip for consistency */
+.return-trip {
+    background: linear-gradient(150deg, #0099ff 0%, #0077ff 100%);
 }
 
 /* Schedule Section */
@@ -437,27 +520,57 @@ main {
 }
 
 .trip-card {
-    background: #f8f9fa;
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(150deg, #0099ff 0%, #0077ff 100%);
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 .trip-card h4 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #3498db;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 
-.return-trip {
-    background: #fff3e0;
+.trip-card .schedule-table thead tr {
+    background: rgba(184, 15, 15, 0.1);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.trip-card .schedule-table th {
+    color: rgba(255, 255, 255, 0.7);
+    /* background: transparent; */
+    background: linear-gradient(150deg, #67c1fdb2 0%, #75aef0 100%);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+}
+
+.trip-card .schedule-table td {
+    color: white;
+    padding: 8px 15px;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.288);
+}
+
+.trip-card .schedule-table tr:last-child td {
+    border-bottom: none;
 }
 
 .schedule-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
+    /* background: #5ebdd5; */
+    background: linear-gradient(150deg, #7fccffd7 0%, #75aef080 100%);
+    border-radius: 10px;
 }
 
 .schedule-table th,

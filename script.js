@@ -93,7 +93,7 @@ const routes = [
                 ]
             },
             {
-                name: "Depart from South Campus at 12h00",
+                name: "Depart from South Campus at 12:00",
                 location: "MISSIONVALE",
                 stops: [
                     { station: "South Campus", time: "12h30" },
@@ -103,7 +103,7 @@ const routes = [
                 ]
             },
             {
-                name: "Depart from South Campus at 14h30",
+                name: "Depart from South Campus at 14:30",
                 location: "MISSIONVALE",
                 stops: [
                     { station: "South Campus", time: "14h30" },
@@ -113,7 +113,7 @@ const routes = [
                 ]
             },
             {
-                name: "Depart from South Campus at 17h30",
+                name: "Depart from South Campus at 17:30",
                 location: "MISSIONVALE",
                 stops: [
                     { station: "South Campus", time: "17h30" },
@@ -205,7 +205,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 12h30',
+                name: 'Returning from South Campus at 12:30',
                 location: 'KORSTEN',
                 stops: [
                     { station: 'South Campus', time: '12:30' },
@@ -214,7 +214,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 14h30',
+                name: 'Returning from South Campus at 14:30',
                 location: 'KORSTEN',
                 stops: [
                     { station: 'South Campus', time: '14:30' },
@@ -223,7 +223,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 17h30',
+                name: 'Returning from South Campus at 17:30',
                 location: 'KORSTEN',
                 stops: [
                     { station: 'South Campus', time: '17:30' },
@@ -277,7 +277,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 12h30',
+                name: 'Returning from South Campus at 12:30',
                 location: 'SYDENHAM-VARSITY PARK- LAW COURTS- MOUNT ROAD- PIER 14',
                 stops: [
                     { station: 'South Campus', time: '12:30' },
@@ -290,7 +290,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 14h30',
+                name: 'Returning from South Campus at 14:30',
                 location: 'SYDENHAM-VARSITY PARK- LAW COURTS- MOUNT ROAD- PIER 14',
                 stops: [
                     { station: 'South Campus', time: '14:30' },
@@ -303,7 +303,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 17h30',
+                name: 'Returning from South Campus at 17:30',
                 location: 'SYDENHAM-VARSITY PARK- LAW COURTS- MOUNT ROAD- PIER 14',
                 stops: [
                     { station: 'South Campus', time: '17:30' },
@@ -358,7 +358,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 12h30',
+                name: 'Returning from South Campus at 12:30',
                 location: 'CENTRAL TO SUMMERSTRAND CAMPUSES',
                 stops: [
                     { station: 'South Campus', time: '12:30' },
@@ -370,7 +370,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 14h30',
+                name: 'Returning from South Campus at 14:30',
                 location: 'CENTRAL TO SUMMERSTRAND CAMPUSES',
                 stops: [
                     { station: 'South Campus', time: '14:30' },
@@ -382,7 +382,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 17h30',
+                name: 'Returning from South Campus at 17:30',
                 location: 'CENTRAL TO SUMMERSTRAND CAMPUSES',
                 stops: [
                     { station: 'South Campus', time: '17:30' },
@@ -427,7 +427,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 12h30',
+                name: 'Returning from South Campus at 12:30',
                 location: 'FEATHERMARKET TO SUMMERSTRAND CAMPUSES',
                 stops: [
                     { station: 'South Campus', time: '12:30' },
@@ -436,7 +436,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 14h30',
+                name: 'Returning from South Campus at 14:30',
                 location: 'FEATHERMARKET TO SUMMERSTRAND CAMPUSES',
                 stops: [
                     { station: 'South Campus', time: '14:30' },
@@ -445,7 +445,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 17h30',
+                name: 'Returning from South Campus at 17:30',
                 location: 'FEATHERMARKET TO SUMMERSTRAND CAMPUSES',
                 stops: [
                     { station: 'South Campus', time: '17:30' },
@@ -493,7 +493,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 12h30',
+                name: 'Returning from South Campus at 12:30',
                 location: 'WALMER',
                 stops: [
                     { station: 'South Campus', time: '12:30' },
@@ -504,7 +504,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 14h30',
+                name: 'Returning from South Campus at 14:30',
                 location: 'WALMER',
                 stops: [
                     { station: 'South Campus', time: '14:30' },
@@ -515,7 +515,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 17h30',
+                name: 'Returning from South Campus at 17:30',
                 location: 'WALMER',
                 stops: [
                     { station: 'South Campus', time: '17:30' },
@@ -565,7 +565,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 12h30',
+                name: 'Returning from South Campus at 12:30',
                 location: 'HUMEWOOD/FORREST HILL TO SUMMERSTRAND CAMPUSES',
                 stops: [
                     { station: 'South Campus', time: '12h30' },
@@ -576,7 +576,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 14h30',
+                name: 'Returning from South Campus at 14:30',
                 location: 'HUMEWOOD/FORREST HILL TO SUMMERSTRAND CAMPUSES',
                 stops: [
                     { station: 'South Campus', time: '14h30' },
@@ -587,7 +587,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 17h30',
+                name: 'Returning from South Campus at 17:30',
                 location: 'HUMEWOOD/FORREST HILL TO SUMMERSTRAND CAMPUSES',
                 stops: [
                     { station: 'South Campus', time: '17h30' },
