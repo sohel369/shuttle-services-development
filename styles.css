@@ -60,10 +60,8 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 40px;
+    background: #00bcd4;
     z-index: 1001;
-    background: #4ce4ff;
-    transition: background-color 0.3s ease;
 }
 
 .Top_header .inner {
@@ -246,7 +244,7 @@ nav {
 
 /* Main Content Styles */
 main {
-    margin-top: 80px;
+    padding-top: 120px;
 }
 
 .hero {
@@ -1000,4 +998,38 @@ footer {
         width: 100%;
         text-align: center;
     }
+}
+
+/* Allocated Times Styles */
+.allocated-times {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.allocated-times h5 {
+    margin: 0 0 8px 0;
+    color: #495057;
+    font-size: 0.9em;
+}
+
+.time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.time-slot {
+    background-color: #e9ecef;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    color: #495057;
+    transition: background-color 0.2s;
+}
+
+.time-slot:hover {
+    background-color: #dee2e6;
+    cursor: pointer;
 }
