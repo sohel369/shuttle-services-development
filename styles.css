@@ -478,17 +478,18 @@ main {
 }
 
 /* Schedule Section */
+#schedule_container_wrapper.hide{
+    display: none;
+}
 .schedule-container {
     background: white;
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 2rem;
+    /* display: none; */
 }
 
-.route-section {
-    display: none;
-}
 
 .route-section.active {
     display: block;
@@ -603,6 +604,49 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.btn {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn1 {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.btn2 {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+
+
+@media screen and (max-width: 460px) {
+    .container{
+        text-align: center;
+        .btn {
+            width: 80%;
+            margin: 12px 0;
+        }
+    } 
 }
 
 .shuttle-schedule h2 {

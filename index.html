@@ -58,7 +58,7 @@
         </section>
 
         <section class="schedules-section" id="schedules">
-            <div class="container">
+            <div class="container hide" id="schedule_container_wrapper">
                 <h2>Shuttle Service Schedule</h2>
                 <div class="schedule-container">
                     <!-- Schedule will be populated by JavaScript -->
@@ -68,21 +68,8 @@
 
         <section class="shuttle-schedule">
             <div class="container">
-                <h2>Shuttle Service Routes and Schedules</h2>
-
-                <!-- Schedule Navigation -->
-                <div class="schedule-nav">
-                    <button class="schedule-btn active" onclick="showSchedule('routes')">Routes</button>
-                    <button class="schedule-btn" onclick="showSchedule('semester1')">1st Semester</button>
-                    <button class="schedule-btn" onclick="showSchedule('semester2')">2nd Semester</button>
-                    <button class="schedule-btn" onclick="showSchedule('exam')">Exam Schedule</button>
-                </div>
-                <div class="schedule-nav" style="margin-top: 10px;">
-                    <button class="schedule-btn" onclick="showSchedule('morning')">Morning Shuttle</button>
-                    <button class="schedule-btn" onclick="showSchedule('evening')">Evening Shuttle</button>
-                    <button class="schedule-btn" onclick="showSchedule('night')">Night Shuttle</button>
-                </div>
-
+                <button class="btn btn1" id="shuttleButton">Shuttle</button>
+                <button class="btn btn2" id="gpsButton">GPS</button>
                 <!-- Routes Section -->
                 <div class="schedule-content" id="routes-schedule">
                     <!-- Route 1 -->

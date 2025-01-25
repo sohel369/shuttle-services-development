@@ -1,4 +1,6 @@
 // Shuttle route data
+let searchInput = document.querySelector('#searchInput');
+
 
 const routes = [
     {
@@ -888,23 +890,99 @@ const routes = [
     }
 ];
 
+// Update the last update time
+function updateLastUpdateTime() {
+    const now = new Date();
+    const options = {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+    };
+    const formattedDate = now.toLocaleDateString('en-US', options);
+    // document.getElementById('lastUpdate').textContent = formattedDate;
+}
+
+// Sample schedule data
+const scheduleData = [
+    {
+        time: '08:00 AM',
+        route: 'Campus A → Campus B',
+        status: 'on-time',
+        statusText: 'On Time'
+    },
+    {
+        time: '09:30 AM',
+        route: 'Campus B → Campus C',
+        status: 'on-time',
+        statusText: 'On Time'
+    },
+    {
+        time: '11:00 AM',
+        route: 'Campus C → Campus A',
+        status: 'delayed',
+        statusText: '5 min delay'
+    }
+];
+
+// Update schedule list
+function updateScheduleList() {
+    const scheduleList = document.querySelector('.schedule-list');
+    scheduleList.innerHTML = '';
+
+    scheduleData.forEach(item => {
+        const scheduleItem = document.createElement('div');
+        scheduleItem.className = 'schedule-item';
+        scheduleItem.innerHTML = `
+            <span class="time">${item.time}</span>
+            <span class="route">${item.route}</span>
+            <span class="status ${item.status}">${item.statusText}</span>`;
+        scheduleList.appendChild(scheduleItem);
+    });
+}
+
+// Update service status
+function updateServiceStatus() {
+    const statusIndicator = document.querySelector('.status-indicator');
+    const statusDot = statusIndicator.querySelector('.status-dot');
+    const statusText = statusIndicator.querySelector('p');
+
+    // You can modify this based on actual service status
+    const isServiceActive = true;
+
+    if (isServiceActive) {
+        statusDot.style.backgroundColor = 'var(--success-color)';
+        statusText.textContent = 'Service Operating Normally';
+        statusIndicator.classList.add('active');
+    } else {
+        statusDot.style.backgroundColor = 'var(--danger-color)';
+        statusText.textContent = 'Service Disrupted';
+        statusIndicator.classList.remove('active');
+    }
+}
 
 // Initialize the page
-document.addEventListener('DOMContentLoaded', () => {
-    displaySchedule();
-    initializeSearch();
+function init() {
+    updateLastUpdateTime();
+    updateScheduleList();
+    updateServiceStatus();
 
-    // Hide all routes initially
-    document.querySelectorAll('.route-section').forEach(section => {
-        section.style.display = 'none';
-    });
-});
+    // Update the time every minute
+    setInterval(updateLastUpdateTime, 60000);
+}
+
+// Run initialization when DOM is loaded
+document.addEventListener('DOMContentLoaded', init);
 
 // Display the shuttle schedule
 function displaySchedule() {
     const scheduleContainer = document.querySelector('.schedule-container');
     let scheduleHTML = '';
 
+    // Add the 'visible' class to make the container visible
+
+    // Populate the schedule HTML
     routes.forEach(route => {
         scheduleHTML += `
             <div class="route-section">
@@ -948,6 +1026,7 @@ function displaySchedule() {
     scheduleContainer.innerHTML = scheduleHTML;
 }
 
+
 // Get all unique stations
 function getAllStations() {
     const stations = new Set();
@@ -971,7 +1050,10 @@ function initializeSearch() {
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.dropdown-container')) {
             dropdown.classList.remove('show');
-        }
+
+        };
+
+
     });
 
     // Handle input events
@@ -1070,6 +1152,10 @@ function selectStation(station) {
 
     // Show relevant route sections
     showRelevantRoutes(station);
+
+    // here box added nl: 25 jan 2025
+    let schedule_container_wrapper = document.querySelector('#schedule_container_wrapper');
+    schedule_container_wrapper.classList.remove('hide');
 }
 
 // Show routes relevant to selected station
@@ -1206,3 +1292,53 @@ document.getElementById('modalOverlay').onclick = function () {
         clearInterval(window.timeInterval);
     }
 };
+
+// Initialize the page
+document.addEventListener('DOMContentLoaded', () => {
+    displaySchedule();
+    initializeSearch();
+
+    // Hide all routes initially
+    document.querySelectorAll('.route-section').forEach(section => {
+        section.style.display = 'none';
+    });
+});
+// button fuction
+const capeTown = { latitude: -33.9249, longitude: 18.4241 }; // Cape Town coordinates
+
+// GPS Button Functionality
+document.getElementById('gpsButton').addEventListener('click', () => {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const { latitude, longitude } = position.coords;
+                alert(`Your location:\nLatitude: ${latitude}\nLongitude: ${longitude}`);
+                const distance = calculateDistance(latitude, longitude, capeTown.latitude, capeTown.longitude);
+                alert(`You are approximately ${distance.toFixed(2)} km from Cape Town.`);
+            },
+            (error) => {
+                alert('Unable to retrieve your location. Please check your settings.');
+            }
+        );
+    } else {
+        alert('Geolocation is not supported by your browser.');
+    }
+});
+
+// Shuttle Button Functionality
+document.getElementById('shuttleButton').addEventListener('click', () => {
+    alert('Shuttle service is available at this time. Please check below.');
+});
+
+// Function to calculate distance between two points (Haversine formula)
+function calculateDistance(lat1, lon1, lat2, lon2) {
+    const toRad = (value) => (value * Math.PI) / 180;
+    const R = 6371; // Radius of Earth in km
+    const dLat = toRad(lat2 - lat1);
+    const dLon = toRad(lon2 - lon1);
+    const a =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c;
+}
