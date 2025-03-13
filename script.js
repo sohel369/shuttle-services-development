@@ -69,10 +69,12 @@ const routes = [
             }
         ]
     },
+
+    // route 2
     {
         id: 2,
         name: "ROUTE 2 ( MISSIONVALE TO SUMMERSTRAND CAMPUSES)",
-        location: "MISSIONVALE",
+        location: "MISSIONVALE TO SUMMERSTRAND CAMPUSES",
         trips: [
             {
                 name: "Morning Trip 1",
@@ -95,7 +97,7 @@ const routes = [
                 ]
             },
             {
-                name: "Depart from South Campus at 12:00",
+                name: "Depart from South Campus at 12h00",
                 location: "MISSIONVALE to SUMMERSTRAND CAMPUSES",
                 stops: [
                     { station: "South Campus", time: "12h30" },
@@ -105,7 +107,7 @@ const routes = [
                 ]
             },
             {
-                name: "Depart from South Campus at 14:30",
+                name: "Depart from South Campus at 14h30",
                 location: "MISSIONVALE to SUMMERSTRAND CAMPUSES",
                 stops: [
                     { station: "South Campus", time: "14h30" },
@@ -115,7 +117,7 @@ const routes = [
                 ]
             },
             {
-                name: "Depart from South Campus at 17:30",
+                name: "Depart from South Campus at 17h30",
                 location: "MISSIONVALE to SUMMERSTRAND CAMPUSES",
                 stops: [
                     { station: "South Campus", time: "17h30" },
@@ -126,6 +128,8 @@ const routes = [
             }
         ]
     },
+
+    // route 3
     {
         location: 'SUMMERSTRAND CAMPUSES to MISSIONVALE CAMPUS',
         name: 'Route 3 (Summerstrand Campuses - Missionvale Campus)',
@@ -134,36 +138,36 @@ const routes = [
                 name: 'Morning Trip 1',
                 location: 'SUMMERSTRAND CAMPUSES to MISSIONVALE CAMPUS',
                 stops: [
-                    { station: 'South Campus', time: '07:00' },
-                    { station: 'North Campus', time: '07:05' },
-                    { station: '2nd Avenue', time: '07:10' },
-                    { station: 'Humewood / Kings Beach', time: '07:15' },
-                    { station: 'Bus Stop in Baakenś street, Central, opposite Feather Market Hall', time: '07:20' },
-                    { station: 'Corner Parliament and Whitlock Streets, On Russell Road', time: '07:23' },
-                    { station: 'opposite Aberdeens Furniture Factory and Shop', time: '07:25' },
-                    { station: 'Corner of Myrtle / Govan Mbeki Ave - Pier 14 Bus stop', time: '07:30' },
-                    { station: 'Corner Govan Mbeki and Harrower Rd', time: '07:33' },
-                    { station: 'Corner Govan Mbeki Ave and Graham Street at the Law Courts', time: '07:35' },
-                    { station: 'Corner of Durban and Drew Roads', time: '07:40' },
-                    { station: 'Arrives at Missionvale Campus', time: '07:50' }
+                    { station: 'South Campus', time: '07h00' },
+                    { station: 'North Campus', time: '07h05' },
+                    { station: '2nd Avenue', time: '07h10' },
+                    { station: 'Humewood / Kings Beach', time: '07h15' },
+                    { station: 'Bus Stop in Baakenś street, Central, opposite Feather Market Hall', time: '07h20' },
+                    { station: 'Corner Parliament and Whitlock Streets, On Russell Road', time: '07h23' },
+                    { station: 'opposite Aberdeens Furniture Factory and Shop', time: '07h25' },
+                    { station: 'Corner of Myrtle / Govan Mbeki Ave - Pier 14 Bus stop', time: '07h30' },
+                    { station: 'Corner Govan Mbeki and Harrower Rd', time: '07h33' },
+                    { station: 'Corner Govan Mbeki Ave and Graham Street at the Law Courts', time: '07h35' },
+                    { station: 'Corner of Durban and Drew Roads', time: '07h40' },
+                    { station: 'Arrives at Missionvale Campus', time: '07h50' }
                 ]
             },
             {
                 name: 'Morning Trip 2',
                 location: 'SUMMERSTRAND CAMPUSES to MISSIONVALE CAMPUS',
                 stops: [
-                    { station: 'South Campus', time: '09:00' },
-                    { station: 'North Campus', time: '09:05' },
-                    { station: '2nd Avenue', time: '09:10' },
-                    { station: 'Humewood / Kings Beach', time: '09:15' },
-                    { station: 'Bus Stop in Baakenś street, Central, opposite Feather Market Hall', time: '09:20' },
-                    { station: 'Corner Parliament and Whitlock Streets, On Russell Road', time: '09:23' },
-                    { station: 'opposite Aberdeens Furniture Factory and Shop', time: '09:25' },
-                    { station: 'Corner of Myrtle / Govan Mbeki Ave - Pier 14 Bus stop', time: '09:30' },
-                    { station: 'Corner Govan Mbeki and Harrower Rd', time: '09:33' },
-                    { station: 'Corner Govan Mbeki Ave and Graham Street at the Law Courts', time: '09:35' },
-                    { station: 'Corner of Durban and Drew Roads', time: '09:40' },
-                    { station: 'Arrives at Missionvale Campus', time: '09:50' }
+                    { station: 'South Campus', time: '09h00' },
+                    { station: 'North Campus', time: '09h05' },
+                    { station: '2nd Avenue', time: '09h10' },
+                    { station: 'Humewood / Kings Beach', time: '09h15' },
+                    { station: 'Bus Stop in Baakenś street, Central, opposite Feather Market Hall', time: '09h20' },
+                    { station: 'Corner Parliament and Whitlock Streets, On Russell Road', time: '09h23' },
+                    { station: 'opposite Aberdeens Furniture Factory and Shop', time: '09h25' },
+                    { station: 'Corner of Myrtle / Govan Mbeki Ave - Pier 14 Bus stop', time: '09h30' },
+                    { station: 'Corner Govan Mbeki and Harrower Rd', time: '09h33' },
+                    { station: 'Corner Govan Mbeki Ave and Graham Street at the Law Courts', time: '09h35' },
+                    { station: 'Corner of Durban and Drew Roads', time: '09h40' },
+                    { station: 'Arrives at Missionvale Campus', time: '09h50' }
                 ]
             },
             {
@@ -183,7 +187,7 @@ const routes = [
                 name: 'Morning Trip 1',
                 location: 'KORSTEN to SUMMERSTRAND CAMPUSES',
                 stops: [
-                    { station: 'Korsten - Corner of Durban and Drew Roads', time: '06h45' },
+                    { station: 'Corner of Durban and Drew Roads', time: '06h45' },
                     { station: '2nd Ave Campus, North Campus', time: '07h05' },
                     { station: 'Arrives at South Campus', time: '07h15' }
                 ]
@@ -219,9 +223,9 @@ const routes = [
                 name: 'Returning from South Campus at 12h30',
                 location: 'KORSTEN to SUMMERSTRAND CAMPUSES',
                 stops: [
-                    { station: 'South Campus', time: '12:30' },
+                    { station: 'South Campus', time: '12h30' },
                     { station: 'North Campus,2nd Avenue Campus', time: '12h35' },
-                    { station: 'Corner of Durban and Drew Roads', time: '13:00' }
+                    { station: 'Corner of Durban and Drew Roads', time: '13h00' }
                 ]
             },
             {
@@ -254,7 +258,7 @@ const routes = [
         ]
     },
     {
-        location: 'SYDENHAM-VARSITY PARK- LAW COURTS- PIER 14',
+        location: 'SYDENHAM-VARSITY PARK- LAW COURTS – PIER 14',
         name: 'Route 5 - PSA 10 on Smart Varsity Park, Smada Res, LAMGA, Pier 14',
         trips: [
             {
@@ -387,7 +391,7 @@ const routes = [
                 location: 'CENTRAL TO SUMMERSTRAND CAMPUSES',
                 stops: [
                     { station: 'Corner Parliament and Whitlock Str', time: '08h45' },
-                    { station: 'Cape Suites Res - Cnr Rink St & Parliament St', time: '08h45' },
+                    // { station: 'Cape Suites Res - Cnr Rink St & Parliament St', time: '08h45' },
                     { station: 'Taxi parking area at the corner of Belmont Terrace and Victoria Str in Central to Central Donkin/King Edward to', time: '08h45' },
                     { station: 'Feather Market', time: '08h45' },
                     { station: '2nd Ave Campus, North Campus,', time: '09h05' },
@@ -399,7 +403,7 @@ const routes = [
                 location: 'CENTRAL TO SUMMERSTRAND CAMPUSES',
                 stops: [
                     { station: 'Corner Parliament and Whitlock Str', time: '09h45' },
-                    { station: 'Cape Suites Res - Cnr Rink St & Parliament St', time: '09h45' },
+                    // { station: 'Cape Suites Res - Cnr Rink St & Parliament St', time: '09h45' },
                     { station: 'Taxi parking area at the corner of Belmont Terrace and Victoria Str in Central to Central Donkin/King Edward to', time: '09h45' },
                     { station: 'Feather Market', time: '09h45' },
                     { station: '2nd Ave Campus, North Campus,', time: '10h05' },
@@ -439,138 +443,172 @@ const routes = [
             // }
         ]
     },
+
+    // route 9
     {
         location: 'FEATHERMARKET TO SUMMERSTRAND CAMPUSES',
-        name: 'Route 7 - Feathermarket to NMU Campuses and return',
+        name: 'Route 9 - Feathermarket to NMU Campuses and return',
         trips: [
             {
                 name: 'Morning Trip 1',
                 location: 'FEATHERMARKET TO SUMMERSTRAND CAMPUSES',
                 stops: [
-                    { station: 'Feather Market(Baakens Street)', time: '07:00' },
-                    { station: '2nd Ave Campus, North Campus,', time: '07:15' },
-                    { station: 'Arrives at South campus', time: '07:30' }
+                    { station: 'Feather Market(Baakens Street)', time: '06h45' },
+                    { station: '2nd Ave Campus, North Campus,', time: '07h05' },
+                    { station: 'Arrives at South campus', time: '07h15' }
                 ]
             },
             {
                 name: 'Morning Trip 2',
                 location: 'FEATHERMARKET TO SUMMERSTRAND CAMPUSES',
                 stops: [
-                    { station: 'Feather Market(Baakens Street)', time: '09:00' },
-                    { station: '2nd Ave Campus, North Campus,', time: '09:30' },
-                    { station: 'Arrives at South campus', time: '09:40' }
+                    { station: 'Feather Market(Baakens Street)', time: '07h45' },
+                    { station: '2nd Ave Campus, North Campus,', time: '08h05' },
+                    { station: 'Arrives at South campus', time: '08h15' }
                 ]
             },
             {
                 name: 'Morning Trip 3',
                 location: 'FEATHERMARKET TO SUMMERSTRAND CAMPUSES',
                 stops: [
-                    { station: 'Feather Market(Baakens Street)', time: '11:00' },
-                    { station: '2nd Ave Campus, North Campus,', time: '11:30' },
-                    { station: 'Arrives at South campus', time: '11:45' }
+                    { station: 'Feather Market(Baakens Street)', time: '08h45' },
+                    { station: '2nd Ave Campus, North Campus,', time: '09h05' },
+                    { station: 'Arrives at South campus', time: '09h15' }
+                ]
+            },
+
+            {
+                name: 'Morning Trip 4',
+                location: 'FEATHERMARKET TO SUMMERSTRAND CAMPUSES',
+                stops: [
+                    { station: 'Feather Market(Baakens Street)', time: '09h45' },
+                    { station: '2nd Ave Campus, North Campus,', time: '10h05' },
+                    { station: 'Arrives at South campus', time: '10h15' }
                 ]
             },
             {
-                name: 'Returning from South Campus at 12:30',
+                name: 'Returning from South Campus at 12h30',
                 location: 'FEATHERMARKET TO SUMMERSTRAND CAMPUSES',
                 stops: [
-                    { station: 'South Campus', time: '12:30' },
-                    { station: 'North Campus,2nd Avenue Campus', time: '12:35' },
-                    { station: 'Feather Market(Baakens Street)', time: '13:00' }
+                    { station: 'South Campus', time: '12h30' },
+                    { station: 'North Campus,2nd Avenue Campus', time: '12h35' },
+                    { station: 'Feather Market(Baakens Street)', time: '13h00' }
                 ]
             },
             {
-                name: 'Returning from South Campus at 14:30',
+                name: 'Returning from South Campus at 14h30',
                 location: 'FEATHERMARKET TO SUMMERSTRAND CAMPUSES',
                 stops: [
-                    { station: 'South Campus', time: '14:30' },
-                    { station: 'North Campus,2nd Avenue Campus', time: '14:35' },
-                    { station: 'Feather Market(Baakens Street)', time: '15:00' }
+                    { station: 'South Campus', time: '14h30' },
+                    { station: 'North Campus,2nd Avenue Campus', time: '14h35' },
+                    { station: 'Feather Market(Baakens Street)', time: '15h00' }
                 ]
             },
             {
-                name: 'Returning from South Campus at 17:30',
+                name: 'Returning from South Campus at 16h00',
                 location: 'FEATHERMARKET TO SUMMERSTRAND CAMPUSES',
                 stops: [
-                    { station: 'South Campus', time: '17:30' },
-                    { station: 'North Campus,2nd Avenue Campus', time: '17:35' },
-                    { station: 'Feather Market(Baakens Street)', time: '18:00' }
+                    { station: 'South Campus', time: '16h00' },
+                    { station: 'North Campus,2nd Avenue Campus', time: '16h05' },
+                    { station: 'Feather Market(Baakens Street)', time: '16h30' }
                 ]
-            }
+            }, {
+                name: 'Returning from South Campus at 17h30',
+                location: 'FEATHERMARKET TO SUMMERSTRAND CAMPUSES',
+                stops: [
+                    { station: 'South Campus', time: '17h30' },
+                    { station: 'North Campus,2nd Avenue Campus', time: '17h35' },
+                    { station: 'Feather Market(Baakens Street)', time: '18h00' }
+                ]
+            },
         ]
     },
-    // {
-    //     location: 'WALMER TO SUMMERSTRAND CAMPUSES',
-    //     name: 'Route 8 Walmer Residences',
-    //     trips: [
-    //         {
-    //             name: 'Morning Trip 1',
-    //             location: 'WALMER TO SUMMERSTRAND CAMPUSES',
-    //             stops: [
-    //                 { station: '6th Avenue Walmer - PSA 8 on 6th', time: '06:40' },
-    //                 { station: 'Huegh Rd Walmer - PSA 22 on Huegh', time: '06:45' },
-    //                 { station: 'Shell Triangle Garage Walmer Boulevard', time: '06:50' },
-    //                 { station: '2nd Ave Campus, North Campus', time: '07:10' },
-    //                 { station: 'Arrives at South Campus', time: '07:30' }
-    //             ]
-    //         },
-    //         {
-    //             name: 'Morning Trip 2',
-    //             location: 'WALMER TO SUMMERSTRAND CAMPUSES',
-    //             stops: [
-    //                 { station: '6th Avenue Walmer - PSA 8 on 6th', time: '09:00' },
-    //                 { station: 'Huegh Rd Walmer - PSA 22 on Huegh', time: '09:05' },
-    //                 { station: 'Shell Triangle Garage Walmer Boulevard', time: '09:10' },
-    //                 { station: '2nd Ave Campus, North Campus', time: '09:20' },
-    //                 { station: 'Arrives at South Campus', time: '09:40' }
-    //             ]
-    //         },
-    //         {
-    //             name: 'Morning Trip 3',
-    //             location: 'WALMER TO SUMMERSTRAND CAMPUSES',
-    //             stops: [
-    //                 { station: '6th Avenue Walmer - PSA 8 on 6th', time: '11:00' },
-    //                 { station: 'Huegh Rd Walmer - PSA 22 on Huegh', time: '11:05' },
-    //                 { station: 'Shell Triangle Garage Walmer Boulevard', time: '11:10' },
-    //                 { station: '2nd Ave Campus, North Campus', time: '11:20' },
-    //                 { station: 'Arrives at South Campus', time: '11:40' }
-    //             ]
-    //         },
-    //         {
-    //             name: 'Returning from South Campus at 12:30',
-    //             location: 'WALMER TO SUMMERSTRAND CAMPUSES',
-    //             stops: [
-    //                 { station: 'South Campus', time: '12:30' },
-    //                 { station: 'North Campus,2nd Avenue Campus', time: '12:35' },
-    //                 { station: 'Shell Triangle Garage Walmer Boulevard', time: '12:50' },
-    //                 { station: 'Huegh Rd Walmer - PSA 22 on Huegh', time: '12:55' },
-    //                 { station: '6th Avenue Walmer - PSA 8 on 6th', time: '13:00' }
-    //             ]
-    //         },
-    //         {
-    //             name: 'Returning from South Campus at 14:30',
-    //             location: 'WALMER TO SUMMERSTRAND CAMPUSES',
-    //             stops: [
-    //                 { station: 'South Campus', time: '14:30' },
-    //                 { station: 'North Campus,2nd Avenue Campus', time: '14:35' },
-    //                 { station: 'Shell Triangle Garage Walmer Boulevard', time: '14:50' },
-    //                 { station: 'Huegh Rd Walmer - PSA 22 on Huegh', time: '14:55' },
-    //                 { station: '6th Avenue Walmer - PSA 8 on 6th', time: '15:00' }
-    //             ]
-    //         },
-    //         {
-    //             name: 'Returning from South Campus at 17:30',
-    //             location: 'WALMER TO SUMMERSTRAND CAMPUSES',
-    //             stops: [
-    //                 { station: 'South Campus', time: '17:30' },
-    //                 { station: 'North Campus,2nd Avenue Campus', time: '17:35' },
-    //                 { station: 'Shell Triangle Garage Walmer Boulevard', time: '17:50' },
-    //                 { station: 'Huegh Rd Walmer - PSA 22 on Huegh', time: '17:55' },
-    //                 { station: '6th Avenue Walmer - PSA 8 on 6th', time: '18:00' }
-    //             ]
-    //         }
-    //     ]
-    // },
+
+
+    // WALMER TO SUMMERSTRAND CAMPUSES
+    {
+        location: 'WALMER TO SUMMERSTRAND CAMPUSES',
+        name: 'Route 10 Walmer Residences',
+        trips: [
+            {
+                name: 'Morning Trip 1',
+                location: 'WALMER TO SUMMERSTRAND CAMPUSES',
+                stops: [
+                    { station: '6th Avenue Walmer - PSA 8 on 6th', time: '06h45' },
+                    { station: 'Huegh Rd Walmer - PSA 22 on Huegh', time: '06h50' },
+                    { station: 'Shell Triangle Garage Walmer Boulevard', time: '06h55' },
+                    { station: '2nd Ave Campus, North Campus', time: '07h05' },
+                    { station: 'Arrives at South Campus', time: '07h15' }
+                ]
+            },
+            {
+                name: 'Morning Trip 2',
+                location: 'WALMER TO SUMMERSTRAND CAMPUSES',
+                stops: [
+                    { station: '6th Avenue Walmer - PSA 8 on 6th', time: '07h45' },
+                    { station: 'Huegh Rd Walmer - PSA 22 on Huegh', time: '07h50' },
+                    { station: 'Shell Triangle Garage Walmer Boulevard', time: '07h55' },
+                    { station: '2nd Ave Campus, North Campus', time: '08h05' },
+                    { station: 'Arrives at South Campus', time: '08h15' }
+                ]
+            },
+            {
+                name: 'Morning Trip 3',
+                location: 'WALMER TO SUMMERSTRAND CAMPUSES',
+                stops: [
+                    { station: '6th Avenue Walmer - PSA 8 on 6th', time: '08h45' },
+                    { station: 'Huegh Rd Walmer - PSA 22 on Huegh', time: '08h50' },
+                    { station: 'Shell Triangle Garage Walmer Boulevard', time: '08h55' },
+                    { station: '2nd Ave Campus, North Campus', time: '09h05' },
+                    { station: 'Arrives at South Campus', time: '09h15' }
+                ]
+            },
+            {
+                name: 'Returning from South Campus at 12h30',
+                location: 'WALMER TO SUMMERSTRAND CAMPUSES',
+                stops: [
+                    { station: 'South Campus', time: '12h30' },
+                    { station: 'North Campus,2nd Avenue Campus', time: '12h35' },
+                    { station: 'Shell Triangle Garage Walmer Boulevard', time: '12h50' },
+                    { station: 'Huegh Rd Walmer - PSA 22 on Huegh', time: '12h55' },
+                    { station: '6th Avenue Walmer - PSA 8 on 6th', time: '13h00' }
+                ]
+            },
+            {
+                name: 'Returning from South Campus at 14h30',
+                location: 'WALMER TO SUMMERSTRAND CAMPUSES',
+                stops: [
+                    { station: 'South Campus', time: '14h30' },
+                    { station: 'North Campus,2nd Avenue Campus', time: '14h35' },
+                    { station: 'Shell Triangle Garage Walmer Boulevard', time: '14h40' },
+                    { station: 'Huegh Rd Walmer - PSA 22 on Huegh', time: '14h45' },
+                    { station: '6th Avenue Walmer - PSA 8 on 6th', time: '14h50' }
+                ]
+            },
+            {
+                name: 'Returning from South Campus at 16h00',
+                location: 'WALMER TO SUMMERSTRAND CAMPUSES',
+                stops: [
+                    { station: 'South Campus', time: '16h00' },
+                    { station: 'North Campus,2nd Avenue Campus', time: '16h05' },
+                    { station: 'Shell Triangle Garage Walmer Boulevard', time: '16h15' },
+                    { station: 'Huegh Rd Walmer - PSA 22 on Huegh', time: '16h20' },
+                    { station: '6th Avenue Walmer - PSA 8 on 6th', time: '16h30' }
+                ]
+            },
+            {
+                name: 'Returning from South Campus at 17h30',
+                location: 'WALMER TO SUMMERSTRAND CAMPUSES',
+                stops: [
+                    { station: 'South Campus', time: '17h30' },
+                    { station: 'North Campus,2nd Avenue Campus', time: '17h35' },
+                    { station: 'Shell Triangle Garage Walmer Boulevard', time: '17h40' },
+                    { station: 'Huegh Rd Walmer - PSA 22 on Huegh', time: '17h45' },
+                    { station: '6th Avenue Walmer - PSA 8 on 6th', time: '17h50' }
+                ]
+            },
+        ]
+    },
     {
         location: 'CENTRAL (BELMONT TERRACE) TO SUMMERSTRAND CAMPUSES',
         name: 'Route 8 Central',
@@ -657,45 +695,60 @@ const routes = [
 
         ]
     },
+
+
+    // HUMEWOOD/FORREST HILL TO SUMMERSTRAND CAMPUSES
+
     {
         location: 'HUMEWOOD/FORREST HILL TO SUMMERSTRAND CAMPUSES',
-        name: 'ROUTE 9 HUMEWOOD AND FORREST HILL',
+        name: 'ROUTE 11 HUMEWOOD AND FORREST HILL',
         trips: [
             {
                 name: 'Morning Trip 1',
                 location: 'HUMEWOOD/FORREST HILL TO SUMMERSTRAND CAMPUSES',
                 stops: [
-                    { station: 'HUMEWOOD-Kings Beach Bus Stop', time: '07h00' },
-                    { station: 'Forrest Hill', time: '07h10' },
+                    { station: 'HUMEWOOD-Kings Beach Bus Stop', time: '06h45' },
+                    { station: 'Forrest Hill', time: '06h55' },
                     { station: 'Forrest Hill Garage,Morestond Flats,Back of Stadium', time: '' },
-                    { station: '2nd Ave Campus, North Campus', time: '07h20' },
-                    { station: 'Arrives at South Campus', time: '07h30' }
+                    { station: '2nd Ave Campus, North Campus', time: '07h05' },
+                    { station: 'Arrives at South Campus', time: '07h15' }
                 ]
             },
             {
                 name: 'Morning Trip 2',
                 location: 'HUMEWOOD/FORREST HILL TO SUMMERSTRAND CAMPUSES',
                 stops: [
-                    { station: 'HUMEWOOD-Kings Beach Bus Stop', time: '09h00' },
-                    { station: 'Forrest Hill', time: '09h10' },
+                    { station: 'HUMEWOOD-Kings Beach Bus Stop', time: '07h45' },
+                    { station: 'Forrest Hill', time: '07h55' },
                     { station: 'Forrest Hill Garage,Morestond Flats,Back of Stadium', time: '' },
-                    { station: '2nd Ave Campus, North Campus', time: '09h20' },
-                    { station: 'Arrives at South Campus', time: '09h30' }
+                    { station: '2nd Ave Campus, North Campus', time: '08h05' },
+                    { station: 'Arrives at South Campus', time: '08h15' }
                 ]
             },
             {
                 name: 'Morning Trip 3',
                 location: 'HUMEWOOD/FORREST HILL TO SUMMERSTRAND CAMPUSES',
                 stops: [
-                    { station: 'HUMEWOOD-Kings Beach Bus Stop', time: '11h00' },
-                    { station: 'Forrest Hill', time: '11h10' },
+                    { station: 'HUMEWOOD-Kings Beach Bus Stop', time: '08h45' },
+                    { station: 'Forrest Hill', time: '08h55' },
                     { station: 'Forrest Hill Garage,Morestond Flats,Back of Stadium', time: '' },
-                    { station: '2nd Ave Campus, North Campus', time: '11h20' },
-                    { station: 'Arrives at South Campus', time: '11h30' }
+                    { station: '2nd Ave Campus, North Campus', time: '09h05' },
+                    { station: 'Arrives at South Campus', time: '09h15' }
                 ]
             },
             {
-                name: 'Returning from South Campus at 12:30',
+                name: 'Morning Trip 4',
+                location: 'HUMEWOOD/FORREST HILL TO SUMMERSTRAND CAMPUSES',
+                stops: [
+                    { station: 'HUMEWOOD-Kings Beach Bus Stop', time: '09h45' },
+                    { station: 'Forrest Hill', time: '09h55' },
+                    { station: 'Forrest Hill Garage,Morestond Flats,Back of Stadium', time: '' },
+                    { station: '2nd Ave Campus, North Campus', time: '10h05' },
+                    { station: 'Arrives at South Campus', time: '10h15' }
+                ]
+            },
+            {
+                name: 'Returning from South Campus at 12h30',
                 location: 'HUMEWOOD/FORREST HILL TO SUMMERSTRAND CAMPUSES',
                 stops: [
                     { station: 'South Campus', time: '12h30' },
@@ -706,7 +759,7 @@ const routes = [
                 ]
             },
             {
-                name: 'Returning from South Campus at 14:30',
+                name: 'Returning from South Campus at 14h30',
                 location: 'HUMEWOOD/FORREST HILL TO SUMMERSTRAND CAMPUSES',
                 stops: [
                     { station: 'South Campus', time: '14h30' },
@@ -715,9 +768,18 @@ const routes = [
                     { station: 'Forrest Hill Garage,Morestond Flats,Back of Stadium', time: '14h50' },
                     { station: 'HUMEWOOD-Kings Beach Bus Stop', time: '15h00' }
                 ]
-            },
-            {
-                name: 'Returning from South Campus at 17:30',
+            }, {
+                name: 'Returning from South Campus at 16h00',
+                location: 'HUMEWOOD/FORREST HILL TO SUMMERSTRAND CAMPUSES',
+                stops: [
+                    { station: 'South Campus', time: '16h00' },
+                    { station: 'North Campus,2nd Avenue Campus', time: '16h05' },
+                    { station: 'Forrest Hill', time: '' },
+                    { station: 'Forrest Hill Garage,Morestond Flats,Back of Stadium', time: '16h20' },
+                    { station: 'HUMEWOOD-Kings Beach Bus Stop', time: '16h30' }
+                ]
+            }, {
+                name: 'Returning from South Campus at 17h30',
                 location: 'HUMEWOOD/FORREST HILL TO SUMMERSTRAND CAMPUSES',
                 stops: [
                     { station: 'South Campus', time: '17h30' },
@@ -726,7 +788,7 @@ const routes = [
                     { station: 'Forrest Hill Garage,Morestond Flats,Back of Stadium', time: '17h50' },
                     { station: 'HUMEWOOD-Kings Beach Bus Stop', time: '18h00' }
                 ]
-            }
+            },
         ]
     },
     {
@@ -879,11 +941,11 @@ const routes = [
     },
     {
         id: 12,
-        name: "ROUTE 11 -Summerstrand Student Village to North and South Campus and return",
+        name: "ROUTE 13 - SUMMERSTRAND STUDENT VILLAGE TO SUMMERSTRAND CAMPUSES",
         location: "SUMMERSTRAND STUDENT VILLAGE TO SUMMERSTRAND CAMPUSES",
         trips: [
             {
-                name: "Morning Trip",
+                name: "Morning Trip 1",
                 location: "SUMMERSTRAND STUDENT VILLAGE TO SUMMERSTRAND CAMPUSES",
                 stops: [
                     { station: "Summerstrand Student Village", time: "06h45" },
@@ -895,27 +957,38 @@ const routes = [
                 name: "Morning Trip 2",
                 location: "SUMMERSTRAND STUDENT VILLAGE TO SUMMERSTRAND CAMPUSES",
                 stops: [
-                    { station: "Summerstrand Student Village", time: "09h00" },
-                    { station: "North Campus", time: "09h30" },
-                    { station: "Arrives at South campus", time: "09h40" }
+                    { station: "Summerstrand Student Village", time: "07h45" },
+                    { station: "North Campus", time: "07h50" },
+                    { station: "Arrives at South campus", time: "07h55" }
                 ]
             },
             {
                 name: "Morning Trip 3",
                 location: "SUMMERSTRAND STUDENT VILLAGE TO SUMMERSTRAND CAMPUSES",
                 stops: [
-                    { station: "Summerstrand Student Village", time: "11h00" },
-                    { station: "North Campus", time: "11h15" },
-                    { station: "Arrives at South campus", time: "11h30" }
+                    { station: "Summerstrand Student Village", time: "08h45" },
+                    { station: "North Campus", time: "08h50" },
+                    { station: "Arrives at South campus", time: "08h55" }
                 ]
             },
+
+            {
+                name: "Morning Trip 4",
+                location: "SUMMERSTRAND STUDENT VILLAGE TO SUMMERSTRAND CAMPUSES",
+                stops: [
+                    { station: "Summerstrand Student Village", time: "09h45" },
+                    { station: "North Campus", time: "09h50" },
+                    { station: "Arrives at South campus", time: "09h55" }
+                ]
+            },
+
             {
                 name: "Returning from South Campus at 12h30",
                 location: "SUMMERSTRAND STUDENT VILLAGE TO SUMMERSTRAND CAMPUSES",
                 stops: [
                     { station: "South Campus", time: "12h30" },
-                    { station: "North Campus", time: "12h35" },
-                    { station: "Summerstrand Student Village", time: "12h40" }
+                    { station: "North Campus", time: "12h40" },
+                    { station: "Summerstrand Student Village", time: "12h50" }
                 ]
             },
             {
@@ -923,17 +996,8 @@ const routes = [
                 location: "SUMMERSTRAND STUDENT VILLAGE TO SUMMERSTRAND CAMPUSES",
                 stops: [
                     { station: "South Campus", time: "14h30" },
-                    { station: "North Campus", time: "14h35" },
-                    { station: "Summerstrand Student Village", time: "14h40" }
-                ]
-            },
-            {
-                name: "Returning from South Campus at 15h15",
-                location: "SUMMERSTRAND STUDENT VILLAGE TO SUMMERSTRAND CAMPUSES",
-                stops: [
-                    { station: "South Campus", time: "15h15" },
-                    { station: "North Campus", time: "15h20" },
-                    { station: "Summerstrand Student Village", time: "15h25" }
+                    { station: "North Campus", time: "14h50" },
+                    { station: "Summerstrand Student Village", time: "15h00" }
                 ]
             },
             {
@@ -953,12 +1017,12 @@ const routes = [
                     { station: "North Campus", time: "17h35" },
                     { station: "Summerstrand Student Village", time: "17h40" }
                 ]
-            }
+            },
         ]
     },
     {
         id: 13,
-        name: "ROUTE 10 - SummerStrand and Intercampus Hopper",
+        name: "ROUTE 12 - SummerStrand and Intercampus Hopper",
         location: "SUMMERSTRAND INTERCAMPUS HOPPER",
         trips: [
             {
