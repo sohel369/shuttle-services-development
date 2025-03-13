@@ -3,6 +3,7 @@ let searchInput = document.querySelector('#searchInput');
 
 
 const routes = [
+    // route 1
     {
         id: 1,
         name: "ROUTE 1 (UITENHAGE TO SUMMERSTRAND CAMPUSES)",
@@ -16,8 +17,7 @@ const routes = [
                     { station: "Missionvale Campus", time: "06h45" },
                     { station: "Shatterproof", time: "06h50" },
                     { station: "2nd Ave Campus, North Campus", time: "07h20" },
-                    { station: "South Campus", time: "07h30" },
-                    { station: "Central", time: "07h30" }
+                    { station: "Arrives at South campus", time: "07h30" },
                 ]
             },
             {
@@ -32,7 +32,7 @@ const routes = [
                 ]
             },
             {
-                name: "Return Trip 1",
+                name: "Returning from South Campus at 12h30",
                 returnTrip: true,
                 location: "UITENHAGE",
                 stops: [
@@ -44,7 +44,7 @@ const routes = [
                 ]
             },
             {
-                name: "Return Trip 2",
+                name: "Returning from South Campus at 14h30",
                 returnTrip: true,
                 location: "UITENHAGE",
                 stops: [
@@ -56,7 +56,7 @@ const routes = [
                 ]
             },
             {
-                name: "Return Trip 3",
+                name: "Returning from South Campus at 17h30",
                 returnTrip: true,
                 location: "UITENHAGE",
                 stops: [
@@ -179,6 +179,8 @@ const routes = [
             }
         ]
     },
+
+    // route 4
     {
         location: 'KORSTEN TO SUMMERSTRAND CAMPUSES',
         name: 'Route 4 (Korsten to Summerstrand Campuses)',
@@ -257,6 +259,8 @@ const routes = [
             },
         ]
     },
+
+    // route 5
     {
         location: 'SYDENHAM-VARSITY PARK- LAW COURTS – PIER 14',
         name: 'Route 5 - PSA 10 on Smart Varsity Park, Smada Res, LAMGA, Pier 14',
@@ -357,7 +361,9 @@ const routes = [
             // }
         ]
     },
+
     // CENTRAL RESIDENCES(RUSSEL ROAD) TO SUMMERSTRAND CAMPUSES
+    // route 6
     {
         location: 'CENTRAL RESIDENCES(RUSSEL ROAD) TO SUMMERSTRAND CAMPUSES',
         name: 'Route 6 Central',
@@ -524,7 +530,6 @@ const routes = [
         ]
     },
 
-
     // WALMER TO SUMMERSTRAND CAMPUSES
     {
         location: 'WALMER TO SUMMERSTRAND CAMPUSES',
@@ -609,6 +614,8 @@ const routes = [
             },
         ]
     },
+
+    // route 8
     {
         location: 'CENTRAL (BELMONT TERRACE) TO SUMMERSTRAND CAMPUSES',
         name: 'Route 8 Central',
@@ -696,9 +703,8 @@ const routes = [
         ]
     },
 
-
     // HUMEWOOD/FORREST HILL TO SUMMERSTRAND CAMPUSES
-
+    // route 11
     {
         location: 'HUMEWOOD/FORREST HILL TO SUMMERSTRAND CAMPUSES',
         name: 'ROUTE 11 HUMEWOOD AND FORREST HILL',
@@ -791,6 +797,9 @@ const routes = [
             },
         ]
     },
+
+    // Nihgt shift
+
     {
         location: 'SUMMERSTRAND TO TOWN - NIGHT SHIFT',
         name: 'Night Shift - Summerstrand to Town',
@@ -875,6 +884,8 @@ const routes = [
             }
         ]
     },
+
+    // Night shift
     {
         location: 'SUMMERSTRAND TO PIER 14 - NIGHT SHIFT',
         name: 'Night Shift - Summerstrand to Pier 14/Mount Road',
@@ -917,6 +928,8 @@ const routes = [
             }
         ]
     },
+
+    // Night shift
     {
         location: 'SUMMERSTRAND TO MISSIONVALE/UITENHAGE - NIGHT SHIFT',
         name: 'Night Shift - Summerstrand to Missionvale/Uitenhage',
@@ -939,9 +952,11 @@ const routes = [
             }
         ]
     },
+
+    // route 13
     {
         id: 12,
-        name: "ROUTE 13 - SUMMERSTRAND STUDENT VILLAGE TO SUMMERSTRAND CAMPUSES",
+        name: "SUMMERSTRAND STUDENT VILLAGE TO SUMMERSTRAND CAMPUSES",
         location: "SUMMERSTRAND STUDENT VILLAGE TO SUMMERSTRAND CAMPUSES",
         trips: [
             {
@@ -1020,6 +1035,8 @@ const routes = [
             },
         ]
     },
+
+    // route 12
     {
         id: 13,
         name: "ROUTE 12 - SummerStrand and Intercampus Hopper",
